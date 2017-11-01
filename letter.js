@@ -13,13 +13,20 @@ Letter.prototype.getLetter = function(validLetter) {
     // Check to see if the letter has been guessed.
     var uppercaseLetter = validLetter.toUpperCase();
 
-    if (this.guessList.indexOf(validLetter) > -1) {
+    if (this.guessList.indexOf(uppercaseLetter) > -1) {
         // If yes, return the letter.
-        return validLetter;
+        return uppercaseLetter;
     } else {
         // If not, return underscore.
         return '_';
     }
+};
+
+Letter.prototype.checkLetterGuessed = function(letter, word) {
+    var uppercaseLetter = letter.toUpperCase();
+    var uppercaseWord = word.toUpperCase();
+
+    return uppercaseWord.indexOf(uppercaseLetter) > -1;
 };
 
 module.exports = Letter;

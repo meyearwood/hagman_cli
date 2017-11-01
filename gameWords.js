@@ -1,14 +1,14 @@
 
 var gameWords = [
-    'Pizza Test',
-    'Ravioli Test',
-    'Calzone Test',
-    'Lasagna Test',
-    'Spaghetti Test',
-    'Calamari Test',
-    'Tiramisu Test',
+    'Pizza',
+    'Ravioli',
+    'Calzone',
+    'Lasagna',
+    'Spaghetti',
+    'Calamari',
+    'Tiramisu',
     'Chicken Marsala',
-    'Rigatoni Test',
+    'Rigatoni',
 ];
 
 module.exports = gameWords;
